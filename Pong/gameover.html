@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fun Jake Pong Game Over </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var gameover_text = new sjs.Text("You are out boi! Your score is pi (3.14159) ",28,"red"); 
+var restartBtn = new sjs.Button("Press to retry", function(){
+window.location = "pong.html";
+});
+restartBtn.center();
+} 
+
+//end start
+</script>
+</head>
+<body onload="start()">
+<h1> You lost, sorry, you got an F- </h1>
+
+<div id="target" style="margin:auto;background:blue"></div>
+</body>
+</html>
